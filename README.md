@@ -83,13 +83,27 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
             Transaction_Type  varchar(--),
             Transaction_Count bigint,
             Transaction_Amount double precision)""")
+#insert df to sql
+#table aggregated transaction
+query="""INSERTINTOaggregated_transaction(State,Transaction_Year,Quater,Transaction_Type,
+      Transaction_Count,Transaction_Amount)VALUES(%s,%s,%s,%s,%s,%s)"""
+for index, row in df_aggr_trans.iterrows():
+  csr.execute(query, tuple(row))
+cont.commit()
 ```
+###Creating Sql Querys and Plot the data to visualization
 - Create sql queries to fetch the data as per the user requirement
+- plot the data to visualization in streamlit dashboard
 ```python
 SELECT * FROM "Table"
 WHERE "Condition"
 GROUP BY "Columns"
 ORDER BY "Data"
+```
+```fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color ='Transaction_amount', hover_name = 'Transaction_count',color_continuous_scale = 'sunset',title = 'All Transaction Analysis Chart', height = 700,)
+                    fig.update_layout(title_font=dict(size=33),title_font_color='#6739b7')
+                    st.write("hover_name:(Transaction count)")
+                    st.plotly_chart(fig,use_container_width=True)
 ```
 - create the streamlit app with basic tabs [Reference](https://docs.streamlit.io/library/api-reference)
 - visualizing the data with plotly and streamlit
