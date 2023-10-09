@@ -8,15 +8,21 @@
 - " Disclaimer:-This data between 2018 to 2023 in INDIA only "
 
 #### Importing required libraries
+#### Import Data Handling libraries
 ```python
-#import libaries
 import pandas as pd
 import numpy as np
+```
+#### Import Dashboard libraries
+```python
 import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
+```
+#### Import Clone libraries
+```python
 import requests
 import json
 ```
@@ -30,7 +36,6 @@ pip install<module name>
 !git clone https://github.com/PhonePe/pulse
 ```
 ```python
-import requests
 #aggregated transaction path
 path="/content/pulse/data/aggregated/transaction/country/india/state/"
 aggr_state_list=os.listdir(path)
