@@ -1,9 +1,5 @@
 # Phonepe_Pulse_Data_Visualization from 2018-2023 phonepe data's
 # Phonepe Pulse Data Visualization using SQL,Python,Streamlit,Gitclone,Pandas,Plotly 
-importing required libraries
-
-
-# This is my Phonepe pulse data  visualization from 2018-2022 project
 
 #### Importing required libraries
 ```python
@@ -61,8 +57,8 @@ for i in aggr_state_list:
         aggr_clm['transaction_amount'].append(amount)
 #successfully created usable dict
 aggr_trans=pd.DataFrame(aggr_clm)
-
-#create CSV file
+```
+```#create CSV file
 #df to Csv
 aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 ```
@@ -75,6 +71,7 @@ aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 import psycopg2
 cont=psycopg2.connect(host='localhost',user='postgres',password='basith',port=5432,database='basith')
 csr=cont.cursor()
+```
 
 ```#create tables
 csr.execute("""create table if not exists aggregated_transaction(State varchar(--),
@@ -92,7 +89,7 @@ for index, row in df_aggr_trans.iterrows():
   csr.execute(query, tuple(row))
 cont.commit()
 ```
-###Creating Sql Querys and Plot the data to visualization
+#### Creating Sql Querys and Plot the data to visualization
 - Create sql queries to fetch the data as per the user requirement
 - plot the data to visualization in streamlit dashboard
 ```python
