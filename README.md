@@ -91,12 +91,6 @@ import psycopg2
 cont=psycopg2.connect(host='localhost',user='postgres',password='basith',port=5432,database='basith')
 csr=cont.cursor()
 ```
-
-### E D A Process and Frame work
-
-#### a) Access PostSQL DB 
-
-* Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
 ```python
 #create tables
 csr.execute("""create table if not exists aggregated_transaction(State varchar(--),
@@ -106,6 +100,13 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
             Transaction_Count bigint,
             Transaction_Amount double precision)""")
 ```
+
+### E D A Process and Frame work
+
+#### a) Access PostSQL DB 
+
+* Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
+  
 ```python
 #insert df to sql
 #table aggregated transaction
