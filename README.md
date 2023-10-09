@@ -58,7 +58,8 @@ for i in aggr_state_list:
 #successfully created usable dict
 aggr_trans=pd.DataFrame(aggr_clm)
 ```
-```#create CSV file
+```python
+#create CSV file
 #df to Csv
 aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 ```
@@ -73,7 +74,8 @@ cont=psycopg2.connect(host='localhost',user='postgres',password='basith',port=54
 csr=cont.cursor()
 ```
 
-```#create tables
+```python
+#create tables
 csr.execute("""create table if not exists aggregated_transaction(State varchar(--),
             Transaction_Year int,
             Quater int,
@@ -81,7 +83,8 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
             Transaction_Count bigint,
             Transaction_Amount double precision)""")
 ```
-```#insert df to sql
+```python
+#insert df to sql
 #table aggregated transaction
 query="""INSERTINTOaggregated_transaction(State,Transaction_Year,Quater,Transaction_Type,
       Transaction_Count,Transaction_Amount)VALUES(%s,%s,%s,%s,%s,%s)"""
@@ -107,5 +110,6 @@ ORDER BY "Data"
 ```
 - create the streamlit app with basic tabs [Reference](https://docs.streamlit.io/library/api-reference)
 - visualizing the data with plotly and streamlit
-#### I hope this project helps you to the understand more about phonepe
+- streamlit run <filename.py> to run terminal
+#### I hope this project helps you to the understand more about phonepe data
 
