@@ -76,14 +76,15 @@ import psycopg2
 cont=psycopg2.connect(host='localhost',user='postgres',password='basith',port=5432,database='basith')
 csr=cont.cursor()
 
-#create tables
+```#create tables
 csr.execute("""create table if not exists aggregated_transaction(State varchar(--),
             Transaction_Year int,
             Quater int,
             Transaction_Type  varchar(--),
             Transaction_Count bigint,
             Transaction_Amount double precision)""")
-#insert df to sql
+```
+```#insert df to sql
 #table aggregated transaction
 query="""INSERTINTOaggregated_transaction(State,Transaction_Year,Quater,Transaction_Type,
       Transaction_Count,Transaction_Amount)VALUES(%s,%s,%s,%s,%s,%s)"""
@@ -100,6 +101,8 @@ WHERE "Condition"
 GROUP BY "Columns"
 ORDER BY "Data"
 ```
+### To Ploting code model
+-using plotly express
 ```fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color ='Transaction_amount', hover_name = 'Transaction_count',color_continuous_scale = 'sunset',title = 'All Transaction Analysis Chart', height = 700,)
                     fig.update_layout(title_font=dict(size=33),title_font_color='#6739b7')
                     st.write("hover_name:(Transaction count)")
