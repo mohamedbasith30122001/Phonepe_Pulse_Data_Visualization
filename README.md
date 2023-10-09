@@ -102,7 +102,8 @@ ORDER BY "Data"
 ```
 ### To Ploting code model
 -using plotly express
-```fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color ='Transaction_amount', hover_name = 'Transaction_count',color_continuous_scale = 'sunset',title = 'All Transaction Analysis Chart', height = 700,)
+```python
+fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color ='Transaction_amount', hover_name = 'Transaction_count',color_continuous_scale = 'sunset',title = 'All Transaction Analysis Chart', height = 700,)
                     fig.update_layout(title_font=dict(size=33),title_font_color='#6739b7')
                     st.write("hover_name:(Transaction count)")
                     st.plotly_chart(fig,use_container_width=True)
