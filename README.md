@@ -1,5 +1,4 @@
-# Phonepe_Pulse_Data_Visualization from 2018-2023 phonepe data's
-# Phonepe Pulse Data Visualization using SQL,Python,Streamlit,Gitclone,Pandas,Plotly 
+# Phonepe Pulse Data Visualization from 2018-2023 phonepe data's using SQL,Python,Streamlit,Gitclone,Pandas,Plotly 
 
 #### Importing required libraries
 ```python
