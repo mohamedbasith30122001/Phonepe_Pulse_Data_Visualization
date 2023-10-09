@@ -86,7 +86,7 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
 ```python
 #insert df to sql
 #table aggregated transaction
-query="""INSERTINTOaggregated_transaction(State,Transaction_Year,Quater,Transaction_Type,
+query="""INSERTINTO aggregated_transaction(State,Transaction_Year,Quater,Transaction_Type,
       Transaction_Count,Transaction_Amount)VALUES(%s,%s,%s,%s,%s,%s)"""
 for index, row in df_aggr_trans.iterrows():
   csr.execute(query, tuple(row))
