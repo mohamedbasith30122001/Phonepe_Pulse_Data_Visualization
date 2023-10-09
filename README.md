@@ -33,7 +33,7 @@ import requests
 path="/content/pulse/data/aggregated/transaction/country/india/state/"
 aggr_state_list=os.listdir(path)
 ```
-### Creating csv file 
+### Fetch data & Creating csv file 
 - after cloning the data from github the dat in the form of json file
 - In order to convert json file into data frame we use below code to another 2 folders
 ```python
