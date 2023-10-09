@@ -40,6 +40,20 @@ pip install<module name>
 path="/content/pulse/data/aggregated/transaction/country/india/state/"
 aggr_state_list=os.listdir(path)
 ```
+### E T L Process
+
+#### a) Extract data
+
+* Initially, we Clone the data from the Phonepe GitHub repository by using Python libraries. https://github.com/PhonePe/pulse.git
+
+#### b) Process and Transform the data
+
+* Process the clone data by using Python algorithms and transform the processed data into DataFrame formate.
+
+#### c) Load  data 
+
+* Finally, create a connection to the MySQL server and create a Database and stored the Transformed data in the MySQL server by using the given method. **df.to_sql('table_name', connection, if_exists = 'replace', index = False, dtype={'Col_name':sqlalchemy.types.datatype()})**
+
 ### Fetch data & Creating csv file 
 - after cloning the data from github the dat in the form of json file
 - In order to convert json file into data frame we use below code to another 2 folders
@@ -74,6 +88,20 @@ aggr_trans=pd.DataFrame(aggr_clm)
 #df to Csv
 aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 ```
+### 5. E D A Process and Frame work
+
+#### a) Access MySQL DB 
+
+* Create a connection to the MySQL server and access the specified MySQL DataBase by using pymysql library 
+
+#### b) Filter the data
+
+* Filter and process the collected data depending on the given requirements by using SQL queries
+
+#### c) Visualization 
+
+* Finally, create a Dashboard by using Streamlit and applying selection and dropdown options on the Dashboard and show the output are Geo visualization, bar chart, and Dataframe Table
+  
 #### Create Table and Insert into Postgresql
 - After creating dataframe insert the dataframe into sql  inner server by using postgresql
 - To Establish the connection with sql server
@@ -124,4 +152,3 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 - visualizing the data with plotly and streamlit
 - streamlit run <filename.py> to run terminal
 #### I hope this project helps you to the understand more about phonepe data
-
