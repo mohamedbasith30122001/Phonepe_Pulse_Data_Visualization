@@ -35,18 +35,18 @@ pip install<module name>
 path="/content/pulse/data/aggregated/transaction/country/india/state/"
 aggr_state_list=os.listdir(path)
 ```
-## E T L Process
+# E T L Process
 
-### a) Extract data
+## a) Extract data
 
 * Initially, we Clone the data from the Phonepe GitHub repository by using Python libraries.
-#### In order to get the data clone the github 
+### In order to get the data clone the github 
 - Inorder to clone the github data into to working environment use below command
 ```python
 !git clone https://github.com/PhonePe/pulse
 ```
-### b) Process and Transform the data
-#### Fetch data & Creating csv file 
+## b) Process and Transform the data
+### Fetch data & Creating csv file 
 - after cloning the data from github the dat in the form of json file
 - In order to convert json file into data frame we use below code to another 2 folders
 ```python
@@ -80,8 +80,8 @@ aggr_trans=pd.DataFrame(aggr_clm)
 #df to Csv
 aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 ```
-### c) Load  data 
-* #### Create Table and Insert into Postgresql
+## c) Load  data 
+* ### Create Table and Insert into Postgresql
 - After creating dataframe insert the dataframe into sql  inner server by using postgresql
 - To Establish the connection with sql server
 - below table to reference another tables 
@@ -101,9 +101,9 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
             Transaction_Amount double precision)""")
 ```
 
-## E D A Process and Frame work
+# E D A Process and Frame work
 
-### a) Access PostSQL DB 
+## a) Access PostSQL DB 
 
 * Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
   
@@ -117,10 +117,10 @@ for index, row in df_aggr_trans.iterrows():
 cont.commit()
 ```
 
-### b) Filter the data
+## b) Filter the data
 
 * Filter and process the collected data depending on the given requirements by using SQL queries
-#### Creating Sql Querys and Plot the data to visualization
+### Creating Sql Querys and Plot the data to visualization
 - Create sql queries to fetch the data as per the user requirement
 - plot the data to visualization in streamlit dashboard
 ```python
@@ -129,10 +129,10 @@ WHERE "Condition"
 GROUP BY "Columns"
 ORDER BY "Data"
 ```
-### c) Visualization 
+## c) Visualization 
 
 * Finally, create a Dashboard by using Streamlit and applying selection and dropdown options on the Dashboard and show the output are Geo visualization, bar chart, and Dataframe Table
-#### To Ploting code model
+### To Ploting code model
 -using plotly express
 ```python
 fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color ='Transaction_amount', hover_name = 'Transaction_count',color_continuous_scale = 'sunset',title = 'All Transaction Analysis Chart', height = 700,)
