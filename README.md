@@ -143,21 +143,20 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 - create the streamlit app with basic tabs [Reference](https://docs.streamlit.io/library/api-reference)
 - visualizing the data with plotly and streamlit
 - streamlit run <filename.py> to run terminal
-  
-# Geo-visualization of Transaction datas
 
+# Conculsion
+## Geo-visualization of Transaction datas
 To see detailed code to use plotly for Geo visualization see main.py (Geo-visualization of transacion data section)
-![geo visualization](https://user-images.githubusercontent.com/113424127/220619224-e6a6de0f-c2d1-4bfa-b4f1-31c8499dc1ba.png)
 
-# User device analysis od Phonepe data
 
-## BAR CHART ANALYSIS
-![user](https://user-images.githubusercontent.com/113424127/220620707-99800e30-9b26-445a-86d7-3604a69c6d68.png)
+## User device analysis od Phonepe data
+### BAR CHART ANALYSIS
+### PIE CHART ANALYSIS
 
-# Payment type analysis
-## PIE CHART ANALYSIS
+## Payment type analysis
+### PIE CHART ANALYSIS
 
-## BAR CHART ANALYSIS
+### BAR CHART ANALYSIS
 
 
 #### I hope this project helps you to the understand more about phonepe data
