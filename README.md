@@ -150,15 +150,14 @@ To see detailed code to use plotly for Geo visualization see main.py (Geo-visual
 ![geo visualization](https://user-images.githubusercontent.com/113424127/220619224-e6a6de0f-c2d1-4bfa-b4f1-31c8499dc1ba.png)
 
 # User device analysis od Phonepe data
-## TREEMAP ANALYSIS
-![userdevice](https://user-images.githubusercontent.com/113424127/220620570-64fefa3d-9d88-4650-a7ff-6eca47d6bf54.png)
+
 ## BAR CHART ANALYSIS
 ![user](https://user-images.githubusercontent.com/113424127/220620707-99800e30-9b26-445a-86d7-3604a69c6d68.png)
 
 # Payment type analysis
 ## PIE CHART ANALYSIS
-![paymentpie](https://user-images.githubusercontent.com/113424127/220621370-ebb279f5-8c7c-4c5d-9c9d-41db47d4556d.png)
+
 ## BAR CHART ANALYSIS
-![paymentbar](https://user-images.githubusercontent.com/113424127/220621500-6dad69df-24f2-494c-ad97-6378adab91b9.png)
+
 
 #### I hope this project helps you to the understand more about phonepe data
