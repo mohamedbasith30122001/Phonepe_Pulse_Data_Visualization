@@ -80,8 +80,8 @@ aggr_trans=pd.DataFrame(aggr_clm)
 #df to Csv
 aggr_trans.to_csv('aggregated_transaction.csv',index=False)
 ```
-## c) Load  data 
-* ### Create Table and Insert into Postgresql
+## c) Load  data
+### Create Table and Insert into Postgresql
 - After creating dataframe insert the dataframe into sql  inner server by using postgresql
 - To Establish the connection with sql server
 - below table to reference another tables 
