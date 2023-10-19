@@ -159,4 +159,4 @@ To see detailed code to use plotly for Geo visualization see main.py (Geo-visual
 ### BAR CHART ANALYSIS
 
 
-#### I hope this project helps you to the understand more about phonepe data
+#### - I hope this project helps you to the understand more about phonepe data
