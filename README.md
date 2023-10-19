@@ -146,7 +146,7 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 
 # Conculsion
 ## Geo-visualization of Transaction datas
-- To see detailed code to use plotly for Geo visualization see main.py (Geo-visualization of transacion data section)
+- To see detailed code to use plotly for Geo visualization see phonepe_pulse_dashboard.py (Geo-visualization of transacion data section)
 
 
 ## User device analysis od Phonepe data
