@@ -103,7 +103,7 @@ csr.execute("""create table if not exists aggregated_transaction(State varchar(-
 
 # E D A Process and Frame work
 
-## a) Access PostSQL DB 
+## a) Access PostgreSQL DB 
 
 * Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
   
