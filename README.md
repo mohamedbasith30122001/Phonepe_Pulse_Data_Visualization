@@ -1,19 +1,19 @@
 # Phonepe Pulse Data Visualization from 2018-2023 phonepe data's using SQL,Python,Streamlit,Gitclone,Pandas,Plotly 
 
-### Introduction:
+# Introduction:
 - PhonePe has become one of the most popular digital payment platforms in India, with millions of users relying on it for their day-to-day transactions. The app is known for its simplicity, user-friendly interface, and fast and secure payment processing. It has also won several awards and accolades for its innovative features and contributions to the digital payments industry.
 
 - We create a web app to analyse the Phonepe transaction and users depending on various Years, Quarters, States, and Types of transaction and give a Geographical and Geo visualization output based on given requirements.
 
 - " Disclaimer:-This data between 2018 to 2023 in INDIA only "
 
-#### Importing required libraries
-#### Import Data Handling libraries
+## Importing required libraries
+### Import Data Handling libraries
 ```python
 import pandas as pd
 import numpy as np
 ```
-#### Import Dashboard libraries
+### Import Dashboard libraries
 ```python
 import plotly.graph_objects as go
 import plotly.express as px
@@ -21,12 +21,12 @@ import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
 ```
-#### Import Clone libraries
+### Import Clone libraries
 ```python
 import requests
 import json
 ```
-#### if the module shows any error or module not found it can be overcome by using below command
+### if the module shows any error or module not found it can be overcome by using below command
 ```python
 pip install<module name>
 ```
@@ -146,7 +146,7 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 
 # Conculsion
 ## Geo-visualization of Transaction datas
-To see detailed code to use plotly for Geo visualization see main.py (Geo-visualization of transacion data section)
+- To see detailed code to use plotly for Geo visualization see main.py (Geo-visualization of transacion data section)
 
 
 ## User device analysis od Phonepe data
