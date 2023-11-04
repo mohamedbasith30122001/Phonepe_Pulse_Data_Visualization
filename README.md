@@ -1,4 +1,4 @@
-# Phonepe Pulse Data Visualization from 2018-2023 phonepe data's using SQL,Python,Streamlit,Gitclone,Pandas,Plotly 
+# Phonepe Pulse Data Visualization Fintech (from 2018-2023 phonepe data's using SQL,Python,Streamlit,Gitclone,Pandas,Plotly) 
 
 # Introduction:
 - PhonePe has become one of the most popular digital payment platforms in India, with millions of users relying on it for their day-to-day transactions. The app is known for its simplicity, user-friendly interface, and fast and secure payment processing. It has also won several awards and accolades for its innovative features and contributions to the digital payments industry.
