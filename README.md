@@ -34,13 +34,13 @@ insights and information that can be visualized in a user-friendly manner.
 ### what i did for project solution:
 ## workflow:
 #### Step 1 :
-- Python environment (Python 3.x recommended) Streamlit, Pandas, easyOCR, PIL, cv2, matplotlib, re, Psycopg2 libraries installed postgresql server setup and running Features **Home**: Displays an overview of the app including technologies used and a brief description of the app. 
+- Python environment (Python 3.x recommended) Streamlit, Pandas,Numpy,Json,Requests,Plotly,PIL,Psycopg2 libraries installed postgresql server setup and running Features **Home**: Displays an overview of the app including technologies used and a brief description of the app. 
 #### Step 2 :
-- **Upload & Extract**: This section allows the user to upload an image of a business card. The application then processes the image and extracts data such as company name, card holder name, designation, mobile number, email, website, area, city, state, pin code, and the image of the card.
+- **Basic Insights**: This section allows the user to click top questions and about data informations.its displayed about data basic insights.
 #### Step 3 : 
-- **Modify**: This section allows users to select an entry from the database using a dropdown menu, which they can then update or **delete**. Note: Ensure your PostgreSQL server is running and the database details in the script match your PostgreSQL setup.
+- **Analysis**: This section allows users to select which type of data information we see.To click  transaction tab in selected year,state,Transaction_type,user_mobile,state,quarter,user will click user tab in selected year,quarter,brand,state to see insights.
 #### Step 4 : 
-- **About** :This section allows users to knows as the project description and workflows.
+- **About** :This section allows users to knows as the phonepe company about.
 ## Importing required libraries
 ### Import Data Handling libraries
 ```python
