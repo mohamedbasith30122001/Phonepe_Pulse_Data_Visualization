@@ -201,12 +201,11 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 ## Top user analysis of phonepe data
 - ### PIE CHART ANALYSIS T & U:
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_pie.png)
-
-
+- This Image insights to increase registered user to improve ads app_opens was high in every states but register user was low so increase the register users.
 
 - ### BAR CHART ANALYSIS T & U: 
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_user.png)
 
-- This Image insights to increase registered user to improve ads app_opens was high in every states but register user was low so increase the register users.
+- This Image insights to user count was low but transaction count high so increase the user counts on every states.
 
 - I hope this project helps you to the understand more about phonepe data
