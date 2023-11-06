@@ -3,11 +3,8 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Domain](#Domain)
-- [Problem Statement ](#Problem_Statement )
-- [Airbnb Dashboard Link](#Airbnb_Dashboard_Link)
-- [Libraries](#Libraries/Modules)
-- [Workflow](#Workflow)
-- [Tableau Dashboard](#Tableau_Dashboard)
+- [Problem_Statement ](#Problem_Statement )
+- [Libraries](#Libraries)
 - [Conclusions](#Conclusions)
 - 
 # Introduction:
@@ -16,8 +13,33 @@
 - We create a web app to analyse the Phonepe transaction and users depending on various Years, Quarters, States, and Types of transaction and give a Geographical and Geo visualization output based on given requirements.
 
 - " Disclaimer:-This data between 2018 to 2023 in INDIA only "
-## Domain 
+# Domain 
 - Fintech
+# Problem_Statement:
+- The Phonepe pulse Github repository contains a large amount of data related to
+various metrics and statistics. The goal is to extract this data and process it to obtain
+insights and information that can be visualized in a user-friendly manner.
+# Libraries
+### Libraries/Modules needed for the project!
+- Streamlit - (To Create Graphical user Interface)
+- Psycopg2 - (To Create local database and interact with data)
+- Json - (To read the data or Json files and convert Json format)
+- PIL - (To Insert and Use Image)
+- Pandas - (To Clean and manipulate the data)
+- Numpy - (To use array and statistical value)
+- Plotly - (To Create the plot)
+- Requests - (To use request the another data)
+# Problem_solution:
+### what i did for project solution:
+## workflow:
+#### Step 1 :
+- Python environment (Python 3.x recommended) Streamlit, Pandas, easyOCR, PIL, cv2, matplotlib, re, Psycopg2 libraries installed postgresql server setup and running Features **Home**: Displays an overview of the app including technologies used and a brief description of the app. 
+#### Step 2 :
+- **Upload & Extract**: This section allows the user to upload an image of a business card. The application then processes the image and extracts data such as company name, card holder name, designation, mobile number, email, website, area, city, state, pin code, and the image of the card.
+#### Step 3 : 
+- **Modify**: This section allows users to select an entry from the database using a dropdown menu, which they can then update or **delete**. Note: Ensure your PostgreSQL server is running and the database details in the script match your PostgreSQL setup.
+#### Step 4 : 
+- **About** :This section allows users to knows as the project description and workflows.
 ## Importing required libraries
 ### Import Data Handling libraries
 ```python
