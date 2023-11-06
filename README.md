@@ -182,10 +182,8 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 ## Geo-visualization of Transaction datas
 - To see detailed code to use plotly for Geo visualization see phonepe_pulse_dashboard.py (Geo-visualization of transacion data section)
 - ### Aggregated All India T & U:
-![Outlook(https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/all_india_data.png)
-
-
-
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/all_india_data.png)
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/all_india_user.png)
 ## User device analysis of Phonepe data
 ### BAR CHART ANALYSIS
 ### PIE CHART ANALYSIS
