@@ -184,12 +184,18 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 - ### Aggregated All India T & U:
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/all_india_data.png)
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/all_india_user.png)
+
+- This image insights to increase user to peer to peer payments and recharge payments.the uttar pradesh has high transaction amount and jharkand has high transaction count and lower than uttar pradesh transaction amount and uttar pradesh has transaction count was lower than jharkand
+
 ## User device analysis of Phonepe data
-### BAR CHART ANALYSIS
-### PIE CHART ANALYSIS
+- ### BAR CHART ANALYSIS T & U:
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/map_user.png)
+- ### PIE CHART ANALYSIS T & U:
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/map_pie.png)
 
 ## Top user analysis of phonepe data
-### PIE CHART ANALYSIS
-### BAR CHART ANALYSIS
-
+- ### PIE CHART ANALYSIS T & U:
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_pie.png)
+- ### BAR CHART ANALYSIS T & U: 
+![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_user.png)
 - I hope this project helps you to the understand more about phonepe data
