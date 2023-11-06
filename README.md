@@ -153,10 +153,9 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 ### BAR CHART ANALYSIS
 ### PIE CHART ANALYSIS
 
+## Top user analysis of phonepe data
 ## Payment type analysis
 ### PIE CHART ANALYSIS
-
 ### BAR CHART ANALYSIS
-
 
 - I hope this project helps you to the understand more about phonepe data
