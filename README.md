@@ -190,12 +190,23 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 ## User device analysis of Phonepe data
 - ### BAR CHART ANALYSIS T & U:
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/map_user.png)
+
+- This Image insights Transaction and user improve user count: Xiaomi brand has default app was low in this states, himachal pradesh,jammu kashmir,manipur,puthucherry,arunasala pradesh,sikkim,nagaland,mizoram,lakshadweep and andaman & nicobar so increase the user to set default app on this brand and then making  more offers on  this brand and states.
+
 - ### PIE CHART ANALYSIS T & U:
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/map_pie.png)
+
+- This Image insights  improve user count in other brand mobile, it covered and changes was big.so set default app on this states uttar pradesh,maharashtra,west bengal,rajastan,madhya pradesh,karnataka,andhra pradesh,delhi,tamil nadu,gujarat.
 
 ## Top user analysis of phonepe data
 - ### PIE CHART ANALYSIS T & U:
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_pie.png)
+
+
+
 - ### BAR CHART ANALYSIS T & U: 
 ![Outlook](https://github.com/mohamedbasith30122001/Phonepe_Pulse_Data_Visualization/blob/main/phonepe_pulse_project_github/outputs_insights/top_user.png)
+
+- This Image insights to increase registered user to improve ads app_opens was high in every states but register user was low so increase the register users.
+
 - I hope this project helps you to the understand more about phonepe data
